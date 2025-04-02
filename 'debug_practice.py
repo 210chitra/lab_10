@@ -1,17 +1,19 @@
-def caculate_average(number) :
+def caculate_average(numbers):
     total = 0
-    for num in number :
+    for num in numbers:
         total += num
-    return total/ len(numbers)
+    return total / len(numbers)
+
 
 def find_max(numbers):
-    if not mumbers:
+    if not numbers:
         return None
     max_num = numbers[0]
     for num in numbers:
         if num > max_num:
             max_num = num
     return max_num
+
 
 def main():
     data = [10, 5, 8, 12, 3, 7]
@@ -26,8 +28,11 @@ def main():
     print(f"Empty list average: {empty_average}")
     print(f"Empty list maximum: {empty_max}")
 
+
 if __name__ == "__main__":
     main()
+
+
 def calculate_average(numbers):
     if not numbers:
         return 0   # Return 0 for empty list
@@ -35,5 +40,3 @@ def calculate_average(numbers):
     for num in numbers:
         total += num
     return total / len(numbers)
-
-
