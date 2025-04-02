@@ -1,8 +1,12 @@
 def calculate_average(numbers):
-    total = 0
-    for num in numbers:
-        total += num
-    return total / len(numbers)
+    # check if the list called numbers is empty
+    if len(numbers) == 0:
+        return None
+    else:
+        total = 0
+        for num in numbers:
+            total += num
+        return total / len(numbers)
 
 
 def find_max(numbers):
