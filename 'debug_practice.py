@@ -1,4 +1,4 @@
-def caculate_average(numbers):
+def calculate_average(numbers):
     total = 0
     for num in numbers:
         total += num
@@ -31,12 +31,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-def calculate_average(numbers):
-    if not numbers:
-        return 0   # Return 0 for empty list
-    total = 0
-    for num in numbers:
-        total += num
-    return total / len(numbers)
